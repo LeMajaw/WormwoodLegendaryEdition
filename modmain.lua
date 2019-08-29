@@ -2,6 +2,17 @@ local BLOOMS_NOW	= GetModConfigData("blooms_now")
 local NORMAL_SOURCE	= GetModConfigData("normal_source")
 local SKIN_BLOOMS	= GetModConfigData("skin_blooms")
 
+PrefabFiles = {
+	"wormwood",
+	"compostwrap"
+}
+
+Assets =
+	{
+		Asset("ANIM", "anim/wormwood_plant_fx_cactus.zip"),
+		Asset("ANIM", "anim/wormwood_plant_fx_mushroom.zip"),
+		Asset("ANIM", "anim/wormwood_plant_fx_rose.zip"),
+	}
 
 -- --- Blooms Now --- --
 if BLOOMS_NOW then
@@ -247,12 +258,7 @@ end
 if SKIN_BLOOMS then
 	local MODENV = env
 
-	Assets =
-	{
-		Asset("ANIM", "anim/wormwood_plant_fx_cactus.zip"),
-		Asset("ANIM", "anim/wormwood_plant_fx_mushroom.zip"),
-		Asset("ANIM", "anim/wormwood_plant_fx_rose.zip"),
-	}
+	
 
 	if MODENV.MODROOT:find("wormwood_mod") then
 		CHEATS_ENABLED = true

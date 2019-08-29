@@ -11,7 +11,10 @@ all_clients_require_mod = true
 icon_atlas = "modicon.xml"
 icon = "modicon.tex"
 
-server_filter_tags = {}
+server_filter_tags = {
+"character",
+"interface"
+}
 
 configuration_options = {
 -- --- Blooms Now --- --
